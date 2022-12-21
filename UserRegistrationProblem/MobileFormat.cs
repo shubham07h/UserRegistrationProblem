@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -8,15 +7,13 @@ using System.Threading.Tasks;
 
 namespace UserRegistration
 {
-    internal class Email
+    internal class MobileFormat
     {
-        public void UCThree()
+        public void Mobileno()
         {
-            Console.WriteLine("Enter user email");
+            Console.WriteLine("Enter user mobile number");
             var data = Console.ReadLine();
-            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-
-
+            string pattern = "^[1-9]{2}[ ][0-9]{10}$";
             Regex regex = new Regex(pattern);
             if (regex.IsMatch(data))
             {
@@ -35,4 +32,3 @@ namespace UserRegistration
         }
     }
 }
-
