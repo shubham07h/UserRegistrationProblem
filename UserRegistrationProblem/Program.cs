@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace UserRegistration
+{
+    public class Program
+    {
+        static void Main(string[] args)
+
+        {
+
+            FirstName first = new FirstName();
+            first.First();
+
+
+
+
+
+        }
+
+
+    }
+}
