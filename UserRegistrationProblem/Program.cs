@@ -6,15 +6,14 @@
 
         {
 
-            MobileFormat mobile = new MobileFormat();
-            mobile.Mobileno();
+            RuleOne min = new RuleOne();
+            min.Min8();
 
         }
 
     }
 
 }
-
 
 
 
